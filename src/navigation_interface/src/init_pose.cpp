@@ -35,19 +35,19 @@ int main(int argc, char **argv) {
   ros::init(argc, argv, "init_pose");
   ros::NodeHandle node;
   ros::NodeHandle node_service;
-//  ros::ServiceClient client = n.serviceClient<gazebo_msgs::GetModelState>("/gazebo/get_model_state");
-  gazebo_msgs::GetModelState objstate;
+  // ros::ServiceClient client = n.serviceClient<gazebo_msgs::GetModelState>("/gazebo/get_model_state");
+  // gazebo_msgs::GetModelState objstate;
   geometry_msgs::Pose pose; //init pose of robot
   ros::Publisher pub = node.advertise<geometry_msgs::PoseStamped>("initialpose", 1);
   ros::Rate loop_rate(10);
   while (ros::ok()) {
     geometry_msgs::PoseStamped rpyPose;
-    objstate.request.model_name = "turtlebot3";
-    objstate.request.relative_entity_name = "world"; 
-    if ((client.call(objstate) && objstate.response.success)){
-      pose = objstate.request.pose;
-      std::cout << "Got the initial pose!" << std::endl;
-    }
+    // objstate.request.model_name = "turtlebot3";
+    // objstate.request.relative_entity_name = "world"; 
+    // if ((client.call(objstate) && objstate.response.success)){
+    //   pose = objstate.request.pose;
+    //   std::cout << "Got the initial pose!" << std::endl;
+    // }
     rpyPose.header.frame_id = "map";
     // rpyPose.header.stamp = 0;
     rpyPose.pose.position.x = -2.8;
