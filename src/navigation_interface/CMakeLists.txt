@@ -162,6 +162,7 @@ target_link_libraries(navigation_interface
 )
 add_dependencies(init_pose ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 target_link_libraries(init_pose ${catkin_LIBRARIES} ${GAZEBO_LIBRARIES})
+
 # target_link_libraries(init_pose
 #   ${catkin_LIBRARIES}
 # )
