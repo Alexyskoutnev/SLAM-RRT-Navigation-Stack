@@ -50,3 +50,5 @@ Keyboard command to location mapping
 - 4 = Room 4
 - 5 = Room 5
 - 6 = Room 6
+# Planning Example
+![Alt Text](./docs/videos/slam_navigation_sample.gif)
