@@ -64,8 +64,8 @@ int main(int argc, char** argv){
             break;
         case 2:
             std::cout << "Going to room 2!" << std::endl;
-            goal.target_pose.pose.position.x = 6.0;
-            goal.target_pose.pose.position.y = -3.0;
+            goal.target_pose.pose.position.x = 5.8;
+            goal.target_pose.pose.position.y = -2.10;
             goal.target_pose.pose.orientation.w = 1.0;
             valid_flag = true;
             break;
@@ -79,7 +79,7 @@ int main(int argc, char** argv){
         case 4:
             std::cout << "Going to room 4!" << std::endl;
             goal.target_pose.pose.position.x = -3.0;
-            goal.target_pose.pose.position.y = 2.5;
+            goal.target_pose.pose.position.y = 1.75;
             goal.target_pose.pose.orientation.w = 1.0;
             valid_flag = true;
             break;
