@@ -1,5 +1,6 @@
 # ROS Navigation Interface
-A ROS navigation app that utilizes a SLAM generated map to navigation a house enviroment in Gazebo using a low-level path planner. The app allows you to navigate to 6 different location in the house, the location are seen here.  
+A ROS navigation app that utilizes a SLAM generated map to navigation a house enviroment in Gazebo using a low-level path planner. The app allows you to navigate to 6 different location in the house, the locations are seen here.  
+![plot](./docs/img/enviroment_mapping.png)
 # Prerequisite Installation
 ## Installing ROS (Melodic)
 ```console
@@ -37,7 +38,7 @@ source ~/.bashrc
 
 ```console 
 roslaunch turtlebot3_gazebo turtlebot3_house.launch &
-roslaunch navigation_interface navigation.launch
+roslaunch navigation_interface navigation.launch &
 cd ~/roboticsfinalproject/
 rosrun navigation_interface navigation_interface
 ```
